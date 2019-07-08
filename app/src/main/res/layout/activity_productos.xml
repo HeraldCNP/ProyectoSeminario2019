@@ -18,8 +18,8 @@
 
     <ImageView
         android:id="@+id/vistaImagenInsertar"
-        android:layout_width="wrap_content"
-        android:layout_height="108dp"
+        android:layout_width="101dp"
+        android:layout_height="83dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -99,6 +99,11 @@
         android:ems="10"
         android:hint="Stock"
         android:inputType="number" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="391dp"
+        android:layout_height="136dp" />
 
     <Button
         android:id="@+id/btnpr"
