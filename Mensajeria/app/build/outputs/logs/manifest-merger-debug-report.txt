@@ -1,0 +1,158 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a61d49e04b7da61554f7a69d48ab0b7b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a4f4383b44fbb4a9467e134e43b88bcc/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e0a8a1ce73e24375187a2144137e37d0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8da1a29932540c64503a7f54d5c3ea8c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cdf03091ddd3ff3369649d7c37903ef6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/946cdcfaa2447fbb9a737c1349cb6bcf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/e049859fbd08666bd85fea96d6296cf1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/402fc90f81ae4ef917f6e7ae5f25cf26/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/1e7b561a92b84bc0488ab506dc1a42ef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/606947e3ae4988acfc44af8e223469ee/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/fed82f82f392e7132965ff59fc23ae6e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/dd6170ad9bb107e22236d8a0f72f04c4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/8e8a9bc5f7b226d59de8edbfe9d5fbed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/ebf5ca2b388efb9f5bef9c909a394d51/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/9ffe8b7a8c0942383efbebc1237859d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6542dbcb0f47771f4638acdca7bde8a6/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/2802f65f20eb9481d927c2a469f85b66/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e06c31321f973e0a1761ed787bf8c006/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/68cb5ea2e48d6dc2fe8535e053dab02e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/b45fd94f55b9e4225239780d63f6eedf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a59b0a8e111ee8a972964d362c656539/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/1dfba459f2172baa18f52f49633e34bd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/598f358ed8f63fadc6afa03030454cc3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/38e9471bd43b9d479aaca01e7078340f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/aea62fb8aaa3aa74193e6e4ce9099c16/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98d221d0aa33b3f8ede00f2fe7fdf73b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ecb4bc29e0116ae0a524b984125ad217/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:3:5-49
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a4f4383b44fbb4a9467e134e43b88bcc/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a4f4383b44fbb4a9467e134e43b88bcc/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6542dbcb0f47771f4638acdca7bde8a6/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6542dbcb0f47771f4638acdca7bde8a6/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/2802f65f20eb9481d927c2a469f85b66/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/2802f65f20eb9481d927c2a469f85b66/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6542dbcb0f47771f4638acdca7bde8a6/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.mijaeljorge.mensajeria.MainActivity
+ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.mijaeljorge.mensajeria.Agenda
+ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:19:9-53
+	android:name
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml:19:19-41
+uses-sdk
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a61d49e04b7da61554f7a69d48ab0b7b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a61d49e04b7da61554f7a69d48ab0b7b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a4f4383b44fbb4a9467e134e43b88bcc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a4f4383b44fbb4a9467e134e43b88bcc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e0a8a1ce73e24375187a2144137e37d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e0a8a1ce73e24375187a2144137e37d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8da1a29932540c64503a7f54d5c3ea8c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/8da1a29932540c64503a7f54d5c3ea8c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cdf03091ddd3ff3369649d7c37903ef6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cdf03091ddd3ff3369649d7c37903ef6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/946cdcfaa2447fbb9a737c1349cb6bcf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/946cdcfaa2447fbb9a737c1349cb6bcf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/e049859fbd08666bd85fea96d6296cf1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/e049859fbd08666bd85fea96d6296cf1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/402fc90f81ae4ef917f6e7ae5f25cf26/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/402fc90f81ae4ef917f6e7ae5f25cf26/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/1e7b561a92b84bc0488ab506dc1a42ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/1e7b561a92b84bc0488ab506dc1a42ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/606947e3ae4988acfc44af8e223469ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/606947e3ae4988acfc44af8e223469ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/fed82f82f392e7132965ff59fc23ae6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/fed82f82f392e7132965ff59fc23ae6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/dd6170ad9bb107e22236d8a0f72f04c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/dd6170ad9bb107e22236d8a0f72f04c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/8e8a9bc5f7b226d59de8edbfe9d5fbed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/8e8a9bc5f7b226d59de8edbfe9d5fbed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/ebf5ca2b388efb9f5bef9c909a394d51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/ebf5ca2b388efb9f5bef9c909a394d51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/9ffe8b7a8c0942383efbebc1237859d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/9ffe8b7a8c0942383efbebc1237859d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6542dbcb0f47771f4638acdca7bde8a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6542dbcb0f47771f4638acdca7bde8a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/2802f65f20eb9481d927c2a469f85b66/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/2802f65f20eb9481d927c2a469f85b66/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e06c31321f973e0a1761ed787bf8c006/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e06c31321f973e0a1761ed787bf8c006/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/68cb5ea2e48d6dc2fe8535e053dab02e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/68cb5ea2e48d6dc2fe8535e053dab02e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/b45fd94f55b9e4225239780d63f6eedf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/b45fd94f55b9e4225239780d63f6eedf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a59b0a8e111ee8a972964d362c656539/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/a59b0a8e111ee8a972964d362c656539/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/1dfba459f2172baa18f52f49633e34bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/1dfba459f2172baa18f52f49633e34bd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/598f358ed8f63fadc6afa03030454cc3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/598f358ed8f63fadc6afa03030454cc3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/38e9471bd43b9d479aaca01e7078340f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/38e9471bd43b9d479aaca01e7078340f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/aea62fb8aaa3aa74193e6e4ce9099c16/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/aea62fb8aaa3aa74193e6e4ce9099c16/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98d221d0aa33b3f8ede00f2fe7fdf73b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98d221d0aa33b3f8ede00f2fe7fdf73b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ecb4bc29e0116ae0a524b984125ad217/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/mijaeljorge/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ecb4bc29e0116ae0a524b984125ad217/AndroidManifest.xml:20:5-44
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+		ADDED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mijaeljorge/AndroidStudioProjects/Mensajeria/app/src/main/AndroidManifest.xml
