@@ -8,6 +8,7 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.snackbar.Snackbar;
 import com.loopj.android.http.*;
@@ -15,6 +16,8 @@ import com.loopj.android.http.*;
 
 import android.content.Intent;
 
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -22,6 +25,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,12 +36,17 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 public class ProductosActivity extends AppCompatActivity implements OnMapReadyCallback{
     ArrayList<String> categoria;
     private GoogleMap mMap;
     private MapView map;
+    Geocoder geocoder;
+    private TextView street;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +60,8 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         map.onResume();
         MapsInitializer.initialize(this);
         map.getMapAsync(this);
+        geocoder = new Geocoder(getBaseContext(), Locale.getDefault());
+        street = findViewById(R.id.location);
 
         setSpinner();
     Button btn = findViewById(R.id.btnpr);
@@ -110,14 +121,17 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         Spinner spinner = findViewById(R.id.category);
         spinner.setAdapter(adapter);
     }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        LatLng sydney = new LatLng(-19.571134, -65.7551786);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("You are Here").zIndex(21).draggable(true));
+        mMap.setMinZoomPreference(10);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-    }
 
+
+    }
 }

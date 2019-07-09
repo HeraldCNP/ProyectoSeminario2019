@@ -10,7 +10,8 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="0dp"
         android:text="Que desea vender"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -18,7 +19,8 @@
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0dp"
         android:ems="10"
         android:hint="Nombre Vendedor"
         android:inputType="textPersonName" />
@@ -26,7 +28,8 @@
     <EditText
         android:id="@+id/price"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0dp"
         android:ems="10"
         android:hint=" Precio del Producto"
         android:inputType="number" />
@@ -34,7 +37,8 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginBottom="0dp"
         android:text="Seleccione categoria" />
 
     <Spinner
@@ -45,7 +49,8 @@
     <EditText
         android:id="@+id/description"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginBottom="0dp"
         android:ems="10"
         android:hint="Descripcion"
         android:inputType="textPersonName" />
@@ -53,7 +58,8 @@
     <EditText
         android:id="@+id/stock"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginBottom="0dp"
         android:ems="10"
         android:hint="Stock"
         android:inputType="number" />
@@ -61,23 +67,23 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginBottom="0dp"
         android:text="Seleccione su ubicacion"
         android:textSize="24sp" />
 
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="388dp"
-        android:layout_height="106dp" />
+        android:layout_width="387dp"
+        android:layout_height="161dp" />
 
     <EditText
         android:id="@+id/location"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="false"
+        android:layout_height="38dp"
+        android:layout_marginBottom="0dp"
         android:ems="10"
-        android:enabled="false"
         android:hint="Ubicacion"
         android:inputType="textPersonName" />
 
@@ -87,6 +93,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#03A9F4"
-        android:text="Enviar" />
+        android:text="Continuar" />
 
 </LinearLayout>
