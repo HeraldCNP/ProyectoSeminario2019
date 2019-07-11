@@ -29,4 +29,12 @@
     <string name="search">Search</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_maps">Map</string>
+    <string name="continuar_con_google">Continuar con Google</string>
+    <string name="o_ingresa_con_tu_email">O ingresa con tu Email</string>
+    <string name="ingresa_tu_email">Ingresa tu Email</string>
+    <string name="ingresa_tu_contrase_a">Ingresa tu Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="eres_nuevo">¿Eres Nuevo?</string>
+    <string name="registrate">Registrate</string>
+    <string name="nombre_completo">Nombre Completo</string>
 </resources>
