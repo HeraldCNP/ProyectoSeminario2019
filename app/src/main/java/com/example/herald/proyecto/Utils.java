@@ -7,6 +7,8 @@ public class Utils {
     public static String USER_SERVICE = HOST + "/v1.0/ventas/user";
     public static String LOGIN_SERVICE = HOST + "/v1.0/ventas/user/login";
 
+
+    public static String TOKEN = "";
 }
 
 
