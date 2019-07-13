@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "Iniciando Sesion", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+//                Snackbar.make(v, "Iniciando Sesion", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                 sendLogin();
             }
 
@@ -51,22 +51,42 @@ public class LoginActivity extends AppCompatActivity {
         RequestParams params = new RequestParams();
         params.add("email", email.getText().toString());
         params.add("password", password.getText().toString());
-        client.post(Utils.LOGIN_SERVICE, params, new JsonHttpResponseHandler(){
-            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                if(response.has("token")){
-                    try {
-                        Utils.TOKEN = response.getString("token");
-                        Toast.makeText(LoginActivity.this, "Sesion Iniciada", Toast.LENGTH_SHORT).show();
+
+        String mail = email.getText().toString();
+        String pass = password.getText().toString();
+
+        if(mail.length() == 0){
+            Toast.makeText(LoginActivity.this, "Debes de ingresar un Email", Toast.LENGTH_SHORT).show();
+        }
+
+        if(pass.length() == 0){
+            Toast.makeText(LoginActivity.this, "Debes de ingresar una Contraseña", Toast.LENGTH_SHORT).show();
+        }
+
+        if(mail.length() != 0 && pass.length() != 0){
+            client.post(Utils.LOGIN_SERVICE, params, new JsonHttpResponseHandler(){
+                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                    if(response.has("token")){
+                        try {
+                            Utils.TOKEN = response.getString("token");
+                            Toast.makeText(LoginActivity.this, "Sesion Iniciada", Toast.LENGTH_SHORT).show();
 //                        welcome.setVisibility(View.VISIBLE);
 //                        welcome.setText("Bienvenido" + email.getText());
-                        Intent main = new Intent(LoginActivity.this, MainActivity.class);
-                        startActivity(main);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
+                            Intent main = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(main);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+                        }
+                    }
+                    else{
+                        Toast.makeText(LoginActivity.this, "Error de TOKEN", Toast.LENGTH_SHORT).show();
                     }
                 }
-            }
-        });
+            });
+        }
+
+
     }
 
 
