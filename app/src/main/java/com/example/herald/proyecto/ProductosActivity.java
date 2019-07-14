@@ -113,10 +113,10 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
     }
     private void setSpinner() {
         categoria = new ArrayList<>();
-        categoria.add("Hogar");
-        categoria.add("Entretenimiento");
-        categoria.add("Comercio");
-        categoria.add("Electronica");
+        categoria.add("Articulos");
+        categoria.add("Vivienda");
+        categoria.add("Coches");
+        categoria.add("Ropa");
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, categoria);
         Spinner spinner = findViewById(R.id.category);
         spinner.setAdapter(adapter);
