@@ -17,7 +17,7 @@ public class ChatBoxMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_chat_box_main);
 
         //call UI components  by id
         btn = (Button)findViewById(R.id.enterchat) ;

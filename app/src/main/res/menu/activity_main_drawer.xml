@@ -13,8 +13,8 @@
             android:icon="@drawable/shopcart"
             android:title="@string/menu_gallery" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_chat_black_24dp"
             android:title="@string/menu_slideshow" />
         <item
             android:id="@+id/nav_tools"

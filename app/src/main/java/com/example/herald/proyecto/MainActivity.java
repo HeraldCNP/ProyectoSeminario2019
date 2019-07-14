@@ -77,6 +77,10 @@ public class MainActivity extends AppCompatActivity
                 Intent vender = new Intent(this, ProductosActivity.class);
                 startActivity(vender);
             }
+            case R.id.chat: {
+                Intent chat = new Intent(this, ChatBoxMain.class);
+                startActivity(chat);
+            }
         }
 
 
