@@ -6,7 +6,7 @@ public class Utils {
     public static String localhost = HOST + "/v1.0/ventas/";
     public static String USER_SERVICE = HOST + "/v1.0/ventas/user";
     public static String LOGIN_SERVICE = HOST + "/v1.0/ventas/user/login";
-
+    public static String CHAT_SERVICE = HOST + "/v1.0/ventas/user/mensaje";
 
     public static String TOKEN = "";
 }

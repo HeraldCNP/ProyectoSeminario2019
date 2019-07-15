@@ -1,14 +1,5 @@
 package com.example.herald.proyecto;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.FileProvider;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -27,7 +18,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -129,6 +128,8 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
                     String mesagge=response.getString("message");
                     if(mesagge!=null){
                         Toast.makeText(getApplicationContext(),mesagge,Toast.LENGTH_SHORT).show();
+                        Intent main = new Intent(AddImagenActivity.this, MainActivity.class);
+                        startActivity(main);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

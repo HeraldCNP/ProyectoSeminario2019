@@ -66,7 +66,7 @@ public class chatBoxActivity extends AppCompatActivity {
 
     private void cargarMensajes() {
         AsyncHttpClient client=new AsyncHttpClient();
-        client.get("http://192.168.1.152:8000/mensaje",null,new JsonHttpResponseHandler(){
+        client.get("http://192.168.1.152:8000/v1.0/ventas/mensaje",null,new JsonHttpResponseHandler(){
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 super.onSuccess(statusCode, headers, response);
@@ -90,7 +90,7 @@ public class chatBoxActivity extends AppCompatActivity {
 
     private void socketEscuchaEmisor() {
         try {
-            socket = IO.socket("http://192.168.43.102:8000");
+            socket = IO.socket("http://192.168.1.152:8000");
             socket.connect();
             socket.emit("join", Nickname);
         } catch (URISyntaxException e) {

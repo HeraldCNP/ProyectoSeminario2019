@@ -1,6 +1,17 @@
 package com.example.herald.proyecto;
 
-import cz.msebera.android.httpclient.Header;
+import android.content.Intent;
+import android.location.Geocoder;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -8,38 +19,19 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.snackbar.Snackbar;
-import com.loopj.android.http.*;
-
-
-import android.content.Intent;
-
-import android.location.Address;
-import android.location.Geocoder;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 
 import org.json.JSONArray;
-
 import org.json.JSONObject;
 
-
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Locale;
+
+import cz.msebera.android.httpclient.Header;
 
 public class ProductosActivity extends AppCompatActivity implements OnMapReadyCallback{
     ArrayList<String> categoria;
@@ -94,7 +86,7 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         client.post(Utils.PRODUCTS_SERVICE, params, new JsonHttpResponseHandler() {
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 if(response.has("price")){
-                    Toast.makeText(ProductosActivity.this, "Datos enviados", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ProductosActivity.this, "Seleccione una imagen", Toast.LENGTH_LONG).show();
                     Intent main = new Intent(ProductosActivity.this, AddImagenActivity.class);
                     startActivity(main);
                 }

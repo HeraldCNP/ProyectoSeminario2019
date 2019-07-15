@@ -2,17 +2,18 @@ package com.example.herald.proyecto;
 
 import android.content.Intent;
 import android.os.Bundle;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import android.view.View;
-import androidx.core.view.GravityCompat;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
-import com.google.android.material.navigation.NavigationView;
-import androidx.drawerlayout.widget.DrawerLayout;
+import android.view.View;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -58,30 +59,27 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        /* if (id == R.id.nav_home) {
+         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.vender) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }*/
-
-        switch (id){
-            case R.id.vender: {
-                Intent vender = new Intent(this, ProductosActivity.class);
+            Intent vender = new Intent(this, ProductosActivity.class);
                 startActivity(vender);
-            }
-            case R.id.chat: {
+        }
+         else if (id == R.id.chat) {
                 Intent chat = new Intent(this, ChatBoxMain.class);
                 startActivity(chat);
-            }
         }
+         else if (id == R.id.nav_tools) {
+
+        }
+         else if (id == R.id.nav_share) {
+
+        }
+         else if (id == R.id.nav_send) {
+
+        }
+
+
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
