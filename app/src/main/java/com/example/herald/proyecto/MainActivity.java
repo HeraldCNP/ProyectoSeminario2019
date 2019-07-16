@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity
 
 
         implements NavigationView.OnNavigationItemSelectedListener {
+    private String email;
 /*
     ImageView imageView;
     TextView name, email, ide;
@@ -48,6 +49,11 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
+        email =getIntent().getStringExtra("email");
+        Toast.makeText(MainActivity.this, "BIENVENIDO " + email, Toast.LENGTH_LONG).show();
 
 
         /*Login with Google*/
@@ -122,7 +128,8 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.vender) {
             Intent vender = new Intent(this, ProductosActivity.class);
-                startActivity(vender);
+            vender.putExtra("mail", email);
+            startActivity(vender);
         }
          else if (id == R.id.chat) {
                 Intent chat = new Intent(this, ChatBoxMain.class);
