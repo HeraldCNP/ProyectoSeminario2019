@@ -20,4 +20,58 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="132dp"-->
+        <!--android:layout_marginTop="29dp"-->
+        <!--android:layout_marginEnd="151dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--tools:srcCompat="@tools:sample/avatars" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textName"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_marginStart="121dp"-->
+        <!--android:layout_marginTop="45dp"-->
+        <!--android:layout_marginEnd="120dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/img" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textEmail"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_marginStart="120dp"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:layout_marginEnd="121dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textName" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textIDE"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginStart="120dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginEnd="121dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textEmail" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_out"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:text="SignOut"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textIDE"-->
+        <!--tools:layout_editor_absoluteX="161dp" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
