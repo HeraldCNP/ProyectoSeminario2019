@@ -25,7 +25,7 @@
     <string name="menu_slideshow">Chat</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_send">LogOut</string>
     <string name="search">Search</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_maps">Map</string>

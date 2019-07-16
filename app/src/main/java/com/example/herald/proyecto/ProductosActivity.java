@@ -86,9 +86,9 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         client.post(Utils.PRODUCTS_SERVICE, params, new JsonHttpResponseHandler() {
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 if(response.has("price")){
-                    Toast.makeText(ProductosActivity.this, "Seleccione una imagen", Toast.LENGTH_LONG).show();
-                    Intent main = new Intent(ProductosActivity.this, AddImagenActivity.class);
-                    startActivity(main);
+                    Toast.makeText(ProductosActivity.this, "Datos enviados", Toast.LENGTH_LONG).show();
+                    Intent img = new Intent(ProductosActivity.this, AddImagenActivity.class);
+                    startActivity(img);
                 }
             }
 

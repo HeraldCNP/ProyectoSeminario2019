@@ -25,7 +25,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -42,9 +41,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class AddImagenActivity extends AppCompatActivity implements View.OnClickListener {
 
-    //imagen
     GridLayoutManager lay;
-    RecyclerView recycler;
     menuAdapter men;
     Button cargar,insert;
     ImageView img;
@@ -56,14 +53,7 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_imagen);
-
-        //img
-        recycler=findViewById(R.id.recyclerId);
-        lay=new GridLayoutManager(this,2);
-        recycler.setLayoutManager(lay);
-        men=new menuAdapter(this);
         cargar();
-        recycler.setAdapter(men);
 
         cargar=findViewById(R.id.cargarImagen);
         cargar.setOnClickListener((View.OnClickListener) this);
@@ -77,11 +67,8 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
 
         img=findViewById(R.id.vistaImagenInsertar);
 
-        //finimg
-
-
     }
-    //img
+
     private void cargar() {
         AsyncHttpClient client=new AsyncHttpClient();
         client.get(Utils.localhost+"image",null,new JsonHttpResponseHandler(){
@@ -92,7 +79,6 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
                     try {
                         JSONObject dat=response.getJSONObject(i);
                         String url=dat.getString("url");
-                        men.add(new item(url));
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -106,6 +92,7 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
         });
 
     }
+
     private void enviarDatos() {
         AsyncHttpClient client=new AsyncHttpClient();
         RequestParams params=new RequestParams();
@@ -128,6 +115,7 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
                     String mesagge=response.getString("message");
                     if(mesagge!=null){
                         Toast.makeText(getApplicationContext(),mesagge,Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddImagenActivity.this, "PRODUCTO REGISTRADO", Toast.LENGTH_LONG).show();
                         Intent main = new Intent(AddImagenActivity.this, MainActivity.class);
                         startActivity(main);
                     }
@@ -267,6 +255,7 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
             return path;
         }
     }
+
     public static FileAndPath createFile(String path, Context c) {
         //Logica de creado
         File file = new File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_PICTURES);
@@ -286,6 +275,7 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
         //Toast.makeText(c,"este es el file img "+fileimg,Toast.LENGTH_LONG).show();
         return new FileAndPath(fileimg,path);
     }
+
     //Aqui recuperamos la url a partir de la imagen
     public static String getRealPathFromURI(Context context, Uri contentURI) {
         String result = null;
