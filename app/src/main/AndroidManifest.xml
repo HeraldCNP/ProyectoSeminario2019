@@ -19,10 +19,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity android:name=".Message"></activity>
-        <activity android:name=".ChatBoxAdapter" />-->
-        <activity android:name=".ChatBoxMain" >
-        </activity>
+        <activity android:name=".ListsActivity"></activity>
+        <!--
+        <activity android:name=".Message"></activity>
+        <activity android:name=".ChatBoxAdapter" />
+        -->
+        <activity android:name=".ChatBoxMain" />
         <activity android:name=".chatBoxActivity" />
         <activity android:name=".UbicacionActivity" />
         <activity android:name=".RegisterActivity" />
@@ -45,9 +47,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar" >
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ProductosActivity" />
         <activity
             android:name=".LoginActivity"

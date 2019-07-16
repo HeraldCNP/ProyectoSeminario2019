@@ -129,7 +129,6 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         mMap.addMarker(new MarkerOptions().position(sydney).title("You are Here").zIndex(21).draggable(true));
         mMap.setMinZoomPreference(17);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-
         mMap.setOnMarkerDragListener(new GoogleMap.OnMarkerDragListener(){
 
             @Override

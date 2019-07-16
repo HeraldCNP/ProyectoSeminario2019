@@ -84,7 +84,6 @@ public class AddImagenActivity extends AppCompatActivity implements View.OnClick
                     }
                 }
             }
-
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 super.onSuccess(statusCode, headers, response);

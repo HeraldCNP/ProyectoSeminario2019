@@ -66,4 +66,6 @@
         android:onClick="onClick"
         android:text="@string/registrate" />
 
+
+
 </LinearLayout>
