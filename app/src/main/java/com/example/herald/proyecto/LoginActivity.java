@@ -132,9 +132,11 @@ public class LoginActivity extends AppCompatActivity {
                         try {
                             Utils.TOKEN = response.getString("token");
                             Toast.makeText(LoginActivity.this, "Sesion Iniciada", Toast.LENGTH_SHORT).show();
+
 //                        welcome.setVisibility(View.VISIBLE);
 //                        welcome.setText("Bienvenido" + email.getText());
                             Intent main = new Intent(LoginActivity.this, MainActivity.class);
+                            main.putExtra("email", email.getText().toString());
                             startActivity(main);
                         } catch (JSONException e) {
                             e.printStackTrace();

@@ -43,6 +43,7 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
     private MapView map;
     private  Geocoder geocoder;
     private TextView street;
+    private String mail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,8 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         }
     });
 
+    mail = getIntent().getStringExtra("mail");
+
     }
 
     private void sendData() {
@@ -82,6 +85,7 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
 
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
+        params.add("user", mail);
         params.add("name", txtname.getText().toString());
         params.add("price", txtprice.getText().toString());
         params.add("category", categoria.get(spcategory.getSelectedItemPosition()));
@@ -112,9 +116,19 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
     private void setSpinner() {
         categoria = new ArrayList<>();
         categoria.add("Articulos");
-        categoria.add("Vivienda");
-        categoria.add("Coches");
-        categoria.add("Ropa");
+        categoria.add("Viviendas");
+        categoria.add("Vehiculos");
+        categoria.add("Propiedades");
+        categoria.add("Electronica");
+        categoria.add("Telefonos");
+        categoria.add("Hogar");
+        categoria.add("Deportes");
+        categoria.add("Moda");
+        categoria.add("Niños");
+        categoria.add("Musica");
+        categoria.add("Herramientas");
+        categoria.add("Trabajo");
+        categoria.add("Servicios");
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, categoria);
         Spinner spinner = findViewById(R.id.category);
         spinner.setAdapter(adapter);
