@@ -1,6 +1,7 @@
 package com.example.herald.proyecto;
 
 import android.content.Intent;
+import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.snackbar.Snackbar;
 import com.loopj.android.http.AsyncHttpClient;
@@ -28,7 +30,9 @@ import com.loopj.android.http.RequestParams;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 import cz.msebera.android.httpclient.Header;
@@ -37,7 +41,7 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
     ArrayList<String> categoria;
     private GoogleMap mMap;
     private MapView map;
-    Geocoder geocoder;
+    private  Geocoder geocoder;
     private TextView street;
 
     @Override
@@ -74,6 +78,7 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         Spinner spcategory = findViewById(R.id.category);
         EditText txtdescription = findViewById(R.id.description);
         EditText txtstock = findViewById(R.id.stock);
+        EditText txtlocation= findViewById(R.id.location);
 
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
@@ -82,6 +87,7 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         params.add("category", categoria.get(spcategory.getSelectedItemPosition()));
         params.add("description", txtdescription.getText().toString());
         params.add("stock", txtstock.getText().toString());
+        params.add("location", txtlocation.getText().toString());
 
         client.post(Utils.PRODUCTS_SERVICE, params, new JsonHttpResponseHandler() {
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
@@ -121,9 +127,38 @@ public class ProductosActivity extends AppCompatActivity implements OnMapReadyCa
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-19.571134, -65.7551786);
         mMap.addMarker(new MarkerOptions().position(sydney).title("You are Here").zIndex(21).draggable(true));
-        mMap.setMinZoomPreference(10);
+        mMap.setMinZoomPreference(17);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
+        mMap.setOnMarkerDragListener(new GoogleMap.OnMarkerDragListener(){
 
+            @Override
+            public void onMarkerDragStart(Marker marker) {
+
+            }
+
+            @Override
+            public void onMarkerDrag(Marker marker) {
+
+            }
+
+            @Override
+            public void onMarkerDragEnd(Marker marker) {
+                String street_string = getStreet(marker.getPosition().latitude,marker.getPosition().longitude);
+                street.setText(street_string);
+            }
+        });
+
+    }
+    public String getStreet(double lat, double lon){
+        List<Address> address;
+        String result = "";
+        try {
+            address = geocoder.getFromLocation(lat, lon, 3);
+            result += address.get(0).getThoroughfare();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 }
