@@ -9,6 +9,9 @@ public class Utils {
     public static String LOGIN_SERVICE = HOST + "/v1.0/ventas/user/login";
     public static String CHAT_SERVICE = HOST + "/v1.0/ventas/user/mensaje";
 
+
+    public static String CATEGORY_SERVICE = HOST + "/v1.0/ventas/product";
+
     public static String TOKEN = "";
 }
 
