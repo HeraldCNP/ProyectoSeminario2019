@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ratings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calificacion">
+
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="265dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Inserte Calificacion" />
+
+
+    <CheckBox
+        android:id="@+id/star1"
+        style="?android:attr/starStyle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        android:tag="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <CheckBox
+        android:id="@+id/star2"
+        style="?android:attr/starStyle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:tag="2"
+        app:layout_constraintStart_toEndOf="@+id/star1"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <CheckBox
+        android:id="@+id/star3"
+        style="?android:attr/starStyle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:tag="3"
+        app:layout_constraintStart_toEndOf="@+id/star2"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <CheckBox
+        android:id="@+id/star4"
+        style="?android:attr/starStyle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:tag="4"
+        app:layout_constraintStart_toEndOf="@+id/star3"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <CheckBox
+        android:id="@+id/star5"
+        style="?android:attr/starStyle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:tag="5"
+        app:layout_constraintStart_toEndOf="@+id/star4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <Button
+        android:id="@+id/atrasc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="324dp"
+        android:onClick="atrasc"
+        android:text="CANCELAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="324dp"
+        android:onClick="enviarc"
+        android:text="ENVIAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toEndOf="@+id/atrasc" />
+
+
+</android.support.constraint.ConstraintLayout>
